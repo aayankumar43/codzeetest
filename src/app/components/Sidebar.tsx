@@ -83,11 +83,11 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
               <div className="text-[10px] text-hud-text-dim mt-0.5">v2.1 // LOCAL</div>
             </div>
           </div>
-          <div className="hud-refcode">
+          {/* <div className="hud-refcode">
             <div>DB.887</div>
             <div>1_007_TAB</div>
             <div>986_DE</div>
-          </div>
+          </div> */}
         </div>
 
         {/* NAV */}
@@ -134,7 +134,7 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
       <div className={`shrink-0 transition-all duration-300 ease-out ${open ? "w-64" : "w-0"}`} />
 
       {/* MAIN */}
-      <main className="flex-1 min-w-0 overflow-y-auto relative z-10">
+      <main className="flex-1 min-w-0 overflow-y-auto relative z-10 left-8">
         <div className={`max-w-[1600px] mx-auto px-8 py-6 transition-all duration-300 ${open ? "" : "pl-8"}`}>
           {children}
         </div>
